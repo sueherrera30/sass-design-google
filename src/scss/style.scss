@@ -14,37 +14,58 @@ $paddingMediano: 5%;
 $paddingChico: 2%;
 $marginIzquierdoCentrado: 10%;
 $cien: 100%;
+/*colores*/
+
 
 
 		/*modificación de elementos*/
 header{
  text-align: $centrado;
-
+	
+	img{
+		margin-left: 10%;
+	}
+	
 	ul{
 	  list-style: none;
 	  font-family: $fuenteRoboto;
-	  display: flex;
-	 /* justify-content: space-between;*/
-	}
+	 }
 	li{
+	    font-weight: bold;
 		padding: $paddingChico;
-		text-align: $centrado;
-		margin-left:$marginIzquierdoCentrado;
-	 font-weight: bold;
+		display: inline-block;
 	}
+
 }
+
 .imagenVerde{
 	text-align: $centrado;
 	height: $cien;
 	width: $cien;
 	
 	img{
-	  height: 95%;
-	width: 95%;
-	}
-	
-	
+	 height: 95%;
+	 width: 95%;
+	}	
 }
+
+.texto-Episode1{
+ font-family: $fuenteRoboto;
+ margin-left: 1%;
+	h2,h4{
+	 padding: 1%;
+	}
+ 
+	h5{
+	  color: #414549;
+	  padding: $paddingChico;
+	}
+	p{
+		padding: $paddingChico;
+		color: #414549;
+	}
+}
+
 
 
 

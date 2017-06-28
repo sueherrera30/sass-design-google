@@ -60,19 +60,19 @@
 /*variables*/
 /*fuente:*/
 /*dimensiones*/
+/*colores*/
 /*modificaci├│n de elementos*/
 header {
   text-align: center; }
+  header img {
+    margin-left: 10%; }
   header ul {
     list-style: none;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    /* justify-content: space-between;*/ }
+    font-family: "Roboto", sans-serif; }
   header li {
+    font-weight: bold;
     padding: 2%;
-    text-align: center;
-    margin-left: 10%;
-    font-weight: bold; }
+    display: inline-block; }
 
 .imagenVerde {
   text-align: center;
@@ -81,5 +81,17 @@ header {
   .imagenVerde img {
     height: 95%;
     width: 95%; }
+
+.texto-Episode1 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 1%; }
+  .texto-Episode1 h2, .texto-Episode1 h4 {
+    padding: 1%; }
+  .texto-Episode1 h5 {
+    color: #414549;
+    padding: 2%; }
+  .texto-Episode1 p {
+    padding: 2%;
+    color: #414549; }
 
 /*# sourceMappingURL=style.css.map */
