@@ -1,3 +1,5 @@
+@import'grid';
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,35 +8,54 @@
 			/*variables*/
 /*fuente:*/
 $fuenteRoboto:'Roboto', sans-serif;
-$textoCentrado: center;
+$centrado: center;
+/*dimensiones*/
+$paddingMediano: 5%;
+$paddingChico: 2%;
+$marginIzquierdoCentrado: 10%;
+$cien: 100%;
 
-/*grid*/
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
+		/*modificación de elementos*/
+header{
+ text-align: $centrado;
+
+	ul{
+	  list-style: none;
+	  font-family: $fuenteRoboto;
+	  display: flex;
+	 /* justify-content: space-between;*/
+	}
+	li{
+		padding: $paddingChico;
+		text-align: $centrado;
+		margin-left:$marginIzquierdoCentrado;
+	 font-weight: bold;
+	}
 }
-.row{
-    &:before{
-        content: " ";
-        display: table;
-    }
-    &:after{
-        @extend .row:before;
-        clear: both;
-    }
+.imagenVerde{
+	text-align: $centrado;
+	height: $cien;
+	width: $cien;
+	
+	img{
+	  height: 95%;
+	width: 95%;
+	}
+	
+	
 }
-[class*= "col-"]{
-    min-height: 7px;
-    padding: 12px;
-    float: left;
-}
-@function anchoColumnas($colums){
-    @return percentage(($colums/12));
-}
-@for $numColumnas from 1 through 12{
-    .col-#{$numColumnas}{
-        width: anchoColumnas($numColumnas);        
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
