@@ -55,7 +55,17 @@ header{
 	}	
  }	
 
+.contenedorimgChica {
+	
+	img{
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 50%;
+	}	
+	
+		
 
+}
 .texto-Episode1{
  font-family: $fuenteRoboto;
  margin-left: 1%;
@@ -78,8 +88,20 @@ header{
 	padding: 0;
 	min-height: 0;
 	text-align: center;
-	margin-left: 1.5%;
 }
+/*
+@mixin lineaAzul{
+	hr{
+	border: solid ;
+	border-color: $colorAzul;
+	padding: 0;
+	min-height: 0;
+	text-align: center;
+	margin-left: 1.5%;
+	}
+	
+}*/
+
 
 .titulo{
 	font-size: $letraGrande;
@@ -88,12 +110,14 @@ header{
 	text-align: $izquierda;
 }
 
+
 .news{
 	font-family: $fuenteRoboto;
 	
 	.fecha{
 		color: $colorGrisClaro;
-		font-size: $letraMediana;	
+		font-size: $letraMediana;
+		padding: 2%;
 	}
 	
 	.azul{
@@ -101,7 +125,18 @@ header{
 		font-size: $letraChica;
 		color: $colorAzul;
 	}
+	
+	.sobre{
+  background: $colorBanco;
+  margin-top:15%;
+ }
 }
+
+
+
+
+
+
 
 
 
