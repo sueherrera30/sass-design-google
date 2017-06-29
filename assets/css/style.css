@@ -73,11 +73,11 @@ header {
     padding: 2%;
     display: inline-block; }
 
-.imagenVerde {
+.contenedorImg {
   text-align: center;
   height: 100%;
   width: 100%; }
-  .imagenVerde img {
+  .contenedorImg img {
     height: 95%;
     width: 95%; }
 
@@ -100,11 +100,20 @@ header {
   text-align: center;
   margin-left: 1.5%; }
 
-.news p {
+.titulo {
+  font-size: 2vw;
   font-family: "Roboto", sans-serif;
-  color: #5f6368; }
-.news .azul {
-  color: #4285f4;
-  font-size: 0.8vw; }
+  color: #414549;
+  text-align: left; }
+
+.news {
+  font-family: "Roboto", sans-serif; }
+  .news .fecha {
+    color: #5f6368;
+    font-size: 1vw; }
+  .news .azul {
+    color: #4285f4;
+    font-size: 0.8vw;
+    color: #4285f4; }
 
 /*# sourceMappingURL=style.css.map */

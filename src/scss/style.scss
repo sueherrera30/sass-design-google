@@ -10,6 +10,7 @@
 /*fuente:*/
 $fuenteRoboto:'Roboto', sans-serif;
 $centrado: center;
+$izquierda: left;
 $letraChica:0.8vw;
 $letraMediana:1vw;
 $letraGrande:2vw;
@@ -43,7 +44,7 @@ header{
 
 }
 
-.imagenVerde{
+ .contenedorImg{
 	text-align: $centrado;
 	height: $cien;
 	width: $cien;
@@ -52,7 +53,8 @@ header{
 	 height: 95%;
 	 width: 95%;
 	}	
-}
+ }	
+
 
 .texto-Episode1{
  font-family: $fuenteRoboto;
@@ -62,12 +64,12 @@ header{
 	}
  
 	h5{
-	  color: #414549;
+	  color: $colorGris;
 	  padding: $paddingChico;
 	}
 	p{
 		padding: $paddingChico;
-		color: #414549;
+		color: $colorGris;
 	}
 }
 
@@ -79,16 +81,25 @@ header{
 	margin-left: 1.5%;
 }
 
+.titulo{
+	font-size: $letraGrande;
+	font-family: $fuenteRoboto;
+	color: $colorGris;
+	text-align: $izquierda;
+}
+
 .news{
-	p{
-		font-family: $fuenteRoboto;
+	font-family: $fuenteRoboto;
+	
+	.fecha{
 		color: $colorGrisClaro;
-		
+		font-size: $letraMediana;	
 	}
 	
 	.azul{
 		color: $colorAzul;
 		font-size: $letraChica;
+		color: $colorAzul;
 	}
 }
 
