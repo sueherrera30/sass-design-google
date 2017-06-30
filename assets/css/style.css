@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*grid*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -52,15 +57,38 @@
 .col-12 {
   width: 100%; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 /*variables*/
 /*fuente:*/
 /*dimensiones*/
 /*modificaci├│n de elementos*/
+body p {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
+
 header {
   text-align: center; }
   header img {
@@ -90,16 +118,14 @@ header {
   width: 20%; }
 
 .texto-Episode1 {
-  font-family: "Roboto", sans-serif;
   margin-left: 1%; }
-  .texto-Episode1 h2, .texto-Episode1 h4 {
+  .texto-Episode1 h2,
+  .texto-Episode1 h4 {
     padding: 1%; }
   .texto-Episode1 h5 {
-    color: #414549;
     padding: 2%; }
   .texto-Episode1 p {
-    padding: 2%;
-    color: #414549; }
+    padding: 2%; }
 
 .lineaAzul {
   border: solid 2px #4285f4;
@@ -107,39 +133,25 @@ header {
   min-height: 0;
   text-align: center; }
 
-/*
-@mixin lineaAzul{
-	hr{
-	border: solid ;
-	border-color: $colorAzul;
-	padding: 0;
-	min-height: 0;
-	text-align: center;
-	margin-left: 1.5%;
-	}
-	
-}*/
 .titulo {
   font-size: 2vw;
-  font-family: "Roboto", sans-serif;
-  color: #414549;
   text-align: left; }
 
-.news {
-  font-family: "Roboto", sans-serif; }
-  .news .fecha {
-    color: #5f6368;
-    font-size: 1vw;
-    padding: 2%; }
-  .news .azul {
-    color: #4285f4;
-    font-size: 0.8vw;
-    color: #4285f4; }
-  .news .sobre {
-    background: #FAF0E6;
-    margin-top: 15%; }
+.news .fecha {
+  font-size: 1vw;
+  padding: 2%; }
+.news .azul {
+  color: #4285f4;
+  font-size: 0.8vw;
+  color: #4285f4; }
+.news .sobre {
+  background: #FAF0E6;
+  margin-top: 15%; }
 
 .contactoGoogle li {
   list-style: none; }
+  .contactoGoogle li p {
+    font-family: "Roboto", sans-serif;
+    color: #5f6368; }
 
 /*# sourceMappingURL=style.css.map */

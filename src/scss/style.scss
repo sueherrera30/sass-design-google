@@ -1,148 +1,104 @@
 @import'grid';
 @import'colors';
+@import'mixin';
+@import'variables';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/*modificación de elementos*/
+
+body {
+	@include estilosFuentes;
 }
-			/*variables*/
-/*fuente:*/
-$fuenteRoboto:'Roboto', sans-serif;
-$centrado: center;
-$izquierda: left;
-$letraChica:0.8vw;
-$letraMediana:1vw;
-$letraGrande:2vw;
-	
-/*dimensiones*/
-$paddingMediano: 5%;
-$paddingChico: 2%;
-$marginIzquierdoCentrado: 10%;
-$cien: 100%;
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		@include fuentesTitulos;
+	}
+}
 
 
-
-
-		/*modificación de elementos*/
-header{
- text-align: $centrado;
-	
-	img{
+header {
+	text-align: $centrado;
+	img {
 		margin-left: 10%;
 	}
-	
-	ul{
-	  list-style: none;
-	  font-family: $fuenteRoboto;
-	 }
-	li{
-	    font-weight: bold;
+	ul {
+		list-style: none;
+		font-family: $fuenteRoboto;
+	}
+	li {
+		font-weight: bold;
 		padding: $paddingChico;
 		display: inline-block;
 	}
-
 }
 
- .contenedorImg{
+.contenedorImg {
 	text-align: $centrado;
 	height: $cien;
 	width: $cien;
-	
-	img{
-	 height: 95%;
-	 width: 95%;
-	}	
- }	
+	img {
+		height: 95%;
+		width: 95%;
+	}
+}
 
 .contenedorimgChica {
-	
-	img{
-	 height: 100%;
-	 width: 100%;
-	 border-radius: 50%;
-	}	
-	.tweet{
-	height: 20%;
-	 width: 20%;
-	}	
-	
-		
-
+	img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+	}
+	.tweet {
+		height: 20%;
+		width: 20%;
+	}
 }
-.texto-Episode1{
- font-family: $fuenteRoboto;
- margin-left: 1%;
-	h2,h4{
-	 padding: 1%;
+
+.texto-Episode1 {
+	margin-left: 1%;
+	h2,
+	h4 {
+		padding: 1%;
 	}
- 
-	h5{
-	  color: $colorGris;
-	  padding: $paddingChico;
-	}
-	p{
+	h5 {
 		padding: $paddingChico;
-		color: $colorGris;
+	}
+	p {
+		padding: $paddingChico;
 	}
 }
 
-.lineaAzul{
-	border: solid 2px $colorAzul;
-	padding: 0;
-	min-height: 0;
-	text-align: center;
+.lineaAzul {
+	@include lineaAzul;
 }
-/*
-@mixin lineaAzul{
-	hr{
-	border: solid ;
-	border-color: $colorAzul;
-	padding: 0;
-	min-height: 0;
-	text-align: center;
-	margin-left: 1.5%;
-	}
-	
-}*/
 
-
-.titulo{
+.titulo {
 	font-size: $letraGrande;
-	font-family: $fuenteRoboto;
-	color: $colorGris;
 	text-align: $izquierda;
 }
 
-
-.news{
-	font-family: $fuenteRoboto;
-	
-	.fecha{
-		color: $colorGrisClaro;
+.news {
+	.fecha {
 		font-size: $letraMediana;
 		padding: 2%;
 	}
-	
-	.azul{
+	.azul {
 		color: $colorAzul;
 		font-size: $letraChica;
 		color: $colorAzul;
 	}
-	
-	.sobre{
-  background: $colorBanco;
-  margin-top:15%;
- }
-}
-
-.contactoGoogle{
-	li{
-		list-style: none;
+	.sobre {
+		background: $colorBanco;
+		margin-top: 15%;
 	}
 }
 
-
+.contactoGoogle {
+	li {
+		list-style: none;
+		@include estilosFuentes;
+	}
+}
 
 
 
