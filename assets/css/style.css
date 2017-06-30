@@ -85,6 +85,9 @@ header {
   height: 100%;
   width: 100%;
   border-radius: 50%; }
+.contenedorimgChica .tweet {
+  height: 20%;
+  width: 20%; }
 
 .texto-Episode1 {
   font-family: "Roboto", sans-serif;
@@ -135,5 +138,8 @@ header {
   .news .sobre {
     background: #FAF0E6;
     margin-top: 15%; }
+
+.contactoGoogle li {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
