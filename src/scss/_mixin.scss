@@ -6,6 +6,7 @@
 @mixin fuentesTitulos {
 	font-family: $fuenteRoboto;
 	color: $colorGrisOscuro;
+	font-size: $letraGrande;
 }
 
 @mixin lineaAzul {

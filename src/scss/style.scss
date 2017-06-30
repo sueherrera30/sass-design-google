@@ -15,6 +15,9 @@ body {
 	}
 }
 
+@function paddingLineas($paddingLineas){
+	@return $paddingLineas + 5%; 
+}
 
 header {
 	text-align: $centrado;
@@ -68,7 +71,12 @@ header {
 	}
 }
 
-.lineaAzul {
+.lineaAzul{
+	@include lineaAzul;
+	 margin-top: paddingLineas(10);
+}
+
+.lineaAzulChica{
 	@include lineaAzul;
 }
 

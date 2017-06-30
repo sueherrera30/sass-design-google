@@ -67,27 +67,33 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 h2 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 h3 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 h4 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 h5 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 h6 {
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 header {
   text-align: center; }
@@ -131,12 +137,20 @@ header {
   border: solid 2px #4285f4;
   padding: 0;
   min-height: 0;
+  text-align: center;
+  margin-top: 15%; }
+
+.lineaAzulChica {
+  border: solid 2px #4285f4;
+  padding: 0;
+  min-height: 0;
   text-align: center; }
 
 .titulo {
   text-align: left;
   font-family: "Roboto", sans-serif;
-  color: #414549; }
+  color: #414549;
+  font-size: 2vw; }
 
 .news .fecha {
   font-family: "Roboto", sans-serif;
