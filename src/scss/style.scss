@@ -73,19 +73,18 @@ header {
 }
 
 .titulo {
-	font-size: $letraGrande;
+	
 	text-align: $izquierda;
+	@include fuentesTitulos;
 }
 
 .news {
 	.fecha {
-		font-size: $letraMediana;
-		padding: 2%;
+		@include estilosFuentes;
+		
 	}
 	.azul {
-		color: $colorAzul;
-		font-size: $letraChica;
-		color: $colorAzul;
+		@include fuenteAzul;
 	}
 	.sobre {
 		background: $colorBanco;
@@ -94,11 +93,17 @@ header {
 }
 
 .contactoGoogle {
-	li {
+	ul {
 		list-style: none;
+	}
+	li {
 		@include estilosFuentes;
 	}
 }
+
+
+
+
 
 
 

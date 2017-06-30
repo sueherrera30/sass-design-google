@@ -1,18 +1,23 @@
-@mixin estilosFuentes{
-	p{
-	 font-family: $fuenteRoboto;
-	 color:$colorGris;
-	}
-}
-
-@mixin fuentesTitulos{
+@mixin estilosFuentes {
 	font-family: $fuenteRoboto;
-	color:$colorGrisOscuro;
+	color: $colorGris;
 }
 
-@mixin lineaAzul{
+@mixin fuentesTitulos {
+	font-family: $fuenteRoboto;
+	color: $colorGrisOscuro;
+}
+
+@mixin lineaAzul {
 	border: solid 2px $colorAzul;
 	padding: 0;
 	min-height: 0;
 	text-align: center;
 }
+
+@mixin fuenteAzul {
+	color: $colorAzul;
+	font-size: $letraChica;
+	color: $colorAzul;
+}
+

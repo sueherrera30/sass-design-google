@@ -61,7 +61,7 @@
 /*fuente:*/
 /*dimensiones*/
 /*modificaci├│n de elementos*/
-body p {
+body {
   font-family: "Roboto", sans-serif;
   color: #5f6368; }
 
@@ -134,12 +134,13 @@ header {
   text-align: center; }
 
 .titulo {
-  font-size: 2vw;
-  text-align: left; }
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #414549; }
 
 .news .fecha {
-  font-size: 1vw;
-  padding: 2%; }
+  font-family: "Roboto", sans-serif;
+  color: #5f6368; }
 .news .azul {
   color: #4285f4;
   font-size: 0.8vw;
@@ -148,10 +149,10 @@ header {
   background: #FAF0E6;
   margin-top: 15%; }
 
-.contactoGoogle li {
+.contactoGoogle ul {
   list-style: none; }
-  .contactoGoogle li p {
-    font-family: "Roboto", sans-serif;
-    color: #5f6368; }
+.contactoGoogle li {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368; }
 
 /*# sourceMappingURL=style.css.map */
